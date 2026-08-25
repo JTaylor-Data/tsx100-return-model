@@ -11,13 +11,13 @@
   <header class="top">
     <div>
       <h1>TSX Top-100 Return Ranking Model</h1>
-      <p>Predicted 12-month forward total return, ranked across the top 100 TSX stocks by index weight. LightGBM trained on technical, fundamental, macro, and cross-sectional features, validated with purge/embargo walk-forward backtesting.</p>
+      <p>Ranks the top 100 TSX stocks by 12-month forward return expectation, expressed relative to the universe average since the model's raw output is right-skewed and not well-calibrated at the absolute level (see banner below). LightGBM trained on technical, fundamental, macro, and cross-sectional features, validated with purge/embargo walk-forward backtesting.</p>
     </div>
     <span class="badge"><span class="dot"></span><span id="as-of-badge">Loading…</span></span>
   </header>
 
   <div class="limitation-banner">
-    <b>Known limitation:</b> point forecasts of 12-month equity returns have inherently low R² &mdash; markets are close to efficient at that horizon, and no model here changes that. Evaluation therefore leans on <b>rank quality</b> (Spearman IC, decile spread) rather than point accuracy. Fundamental ratios are only available from each company's most recent ~5 annual filings; earlier history in the backtest relies on technical/macro features alone.
+    <b>Known limitation:</b> point forecasts of 12-month equity returns have inherently low R² &mdash; markets are close to efficient at that horizon, and no model here changes that. Evaluation therefore leans on <b>rank quality</b> (Spearman IC, decile spread) rather than point accuracy. The raw model output is also right-skewed (a handful of small-cap miners with extreme historical returns pull it up) and can land positive for the whole universe at once when momentum is broadly strong &mdash; so returns shown here are <b>relative to that date's universe average</b>, not absolute forecasts; the raw model output is shown alongside it in each stock's detail view. Fundamental ratios are only available from each company's most recent ~5 annual filings; earlier history in the backtest relies on technical/macro features alone.
   </div>
 
   <main>
@@ -42,7 +42,7 @@
               <th data-key="ticker">Ticker</th>
               <th data-key="name">Name</th>
               <th data-key="sector">Sector</th>
-              <th data-key="predicted_return_12m">Predicted 12mo return</th>
+              <th data-key="predicted_excess_return_12m">Predicted return vs. avg</th>
               <th data-key="current_price">Price</th>
             </tr>
           </thead>
@@ -85,7 +85,7 @@
       </div>
       <div class="cards" style="grid-template-columns: 1fr 1fr;">
         <div class="card">
-          <div class="label">Predicted 12mo return</div>
+          <div class="label">Predicted return vs. universe avg</div>
           <div class="value" id="drawer-return"></div>
           <div class="sub" id="drawer-rank"></div>
         </div>
@@ -94,8 +94,8 @@
           <div class="value" id="drawer-price"></div>
         </div>
       </div>
-      <h3 style="font-size:14px; margin-bottom:4px;">Price history &amp; predicted path</h3>
-      <p class="hint" style="color:var(--text-dim); font-size:12px; margin-top:0;">Solid: last 24 months actual (weekly close). Dashed: straight-line glide path to the model's 12-month predicted return &mdash; a visualization of the prediction, not a separate forecast.</p>
+      <h3 style="font-size:14px; margin-bottom:4px;">Price history &amp; relative path</h3>
+      <p class="hint" style="color:var(--text-dim); font-size:12px; margin-top:0;">Solid: last 24 months actual (weekly close). Dashed: straight-line glide path to the model's predicted return <i>relative to the universe average</i> &mdash; a visualization of the ranking, not a price forecast independent of overall market moves.</p>
       <canvas id="price-chart" height="200"></canvas>
 
       <div class="snapshot-grid" id="snapshot-grid"></div>

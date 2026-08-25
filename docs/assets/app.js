@@ -89,8 +89,7 @@ function getFilteredSortedStocks() {
   }
   const key = state.sortKey, dir = state.sortDir;
   rows.sort((a, b) => {
-    let av = key === "predicted_return_12m" || key === "current_price" || key === "rank" ? a[key] : a[key];
-    let bv = key === "predicted_return_12m" || key === "current_price" || key === "rank" ? b[key] : b[key];
+    const av = a[key], bv = b[key];
     if (typeof av === "string") return av.localeCompare(bv) * dir;
     return ((av ?? -Infinity) - (bv ?? -Infinity)) * dir;
   });
@@ -106,7 +105,7 @@ function renderTable() {
       <td class="ticker-cell">${r.ticker}</td>
       <td>${r.name || ""}</td>
       <td><span class="sector-pill">${r.sector}</span></td>
-      <td class="${retClass(r.predicted_return_12m)}">${fmtPct(r.predicted_return_12m)}</td>
+      <td class="${retClass(r.predicted_excess_return_12m)}">${fmtPct(r.predicted_excess_return_12m)}</td>
       <td>${r.current_price != null ? "$" + r.current_price.toFixed(2) : "—"}</td>
     </tr>`).join("");
   tbody.querySelectorAll("tr").forEach(tr => tr.addEventListener("click", () => openDrawer(tr.dataset.ticker)));
@@ -130,10 +129,11 @@ function openDrawer(ticker) {
   document.getElementById("drawer-ticker").textContent = stock.ticker;
   document.getElementById("drawer-name").textContent = stock.name || "";
   document.getElementById("drawer-sector").textContent = stock.sector;
-  document.getElementById("drawer-return").textContent = fmtPct(stock.predicted_return_12m);
-  document.getElementById("drawer-return").className = retClass(stock.predicted_return_12m);
+  document.getElementById("drawer-return").textContent = fmtPct(stock.predicted_excess_return_12m);
+  document.getElementById("drawer-return").className = retClass(stock.predicted_excess_return_12m);
   document.getElementById("drawer-price").textContent = stock.current_price != null ? "$" + stock.current_price.toFixed(2) : "—";
-  document.getElementById("drawer-rank").textContent = `Rank ${stock.rank} of ${state.rankings.n_stocks}`;
+  document.getElementById("drawer-rank").textContent =
+    `Rank ${stock.rank} of ${state.rankings.n_stocks} · raw model output ${fmtPct(stock.predicted_return_12m)}`;
 
   const snapKeys = ["pe_ratio", "pb_ratio", "div_yield", "roe", "roa", "debt_equity", "mom_12m", "vol_252d"];
   document.getElementById("snapshot-grid").innerHTML = snapKeys.map(k => `
@@ -179,7 +179,7 @@ function renderPriceChart(ticker) {
           spanGaps: false,
         },
         {
-          label: "Predicted path (12mo)",
+          label: "Relative path vs. universe avg (12mo)",
           data: projectedData,
           borderColor: "#e8a33d",
           backgroundColor: "transparent",

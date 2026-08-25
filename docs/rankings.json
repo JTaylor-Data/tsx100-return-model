@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-08-25T18:49:52.679165+00:00",
+  "generated_at": "2026-08-25T19:34:09.632975+00:00",
   "as_of_date": "2026-08-01",
   "n_stocks": 100,
   "model": "lightgbm",
   "n_features": 27,
   "n_training_rows": 15842,
+  "universe_mean_predicted_return_12m": 0.6501,
   "stocks": [
     {
       "rank": 1,
@@ -12,6 +13,7 @@
       "yf_ticker": "HBM.TO",
       "name": "HUDBAY MINERALS INC",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.3015,
       "predicted_return_12m": 1.9516,
       "current_price": 34.79,
       "snapshot": {
@@ -37,6 +39,7 @@
       "yf_ticker": "LUN.TO",
       "name": "LUNDIN MINING",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.2156,
       "predicted_return_12m": 1.8657,
       "current_price": 37.7,
       "snapshot": {
@@ -62,6 +65,7 @@
       "yf_ticker": "SSRM.TO",
       "name": "SSR MINING",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.1519,
       "predicted_return_12m": 1.802,
       "current_price": 37.4145,
       "snapshot": {
@@ -87,6 +91,7 @@
       "yf_ticker": "BTO.TO",
       "name": "B2GOLD",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.1433,
       "predicted_return_12m": 1.7934,
       "current_price": 5.48,
       "snapshot": {
@@ -112,6 +117,7 @@
       "yf_ticker": "IMG.TO",
       "name": "IAMGOLD CORP",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.0997,
       "predicted_return_12m": 1.7498,
       "current_price": 20.85,
       "snapshot": {
@@ -137,6 +143,7 @@
       "yf_ticker": "AGI.TO",
       "name": "ALAMOS GOLD INC CLASS A",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.0849,
       "predicted_return_12m": 1.735,
       "current_price": 40.42,
       "snapshot": {
@@ -162,6 +169,7 @@
       "yf_ticker": "AEM.TO",
       "name": "AGNICO EAGLE MINES",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.0257,
       "predicted_return_12m": 1.6758,
       "current_price": 211.83,
       "snapshot": {
@@ -187,6 +195,7 @@
       "yf_ticker": "K.TO",
       "name": "KINROSS GOLD CORP",
       "sector": "Materials",
+      "predicted_excess_return_12m": 1.0241,
       "predicted_return_12m": 1.6742,
       "current_price": 33.1358,
       "snapshot": {
@@ -212,6 +221,7 @@
       "yf_ticker": "OGC.TO",
       "name": "OCEANAGOLD CORPORATION CORP",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.9678,
       "predicted_return_12m": 1.618,
       "current_price": 35.1547,
       "snapshot": {
@@ -237,6 +247,7 @@
       "yf_ticker": "DPM.TO",
       "name": "DPM METALS",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.9219,
       "predicted_return_12m": 1.572,
       "current_price": 53.54,
       "snapshot": {
@@ -262,6 +273,7 @@
       "yf_ticker": "ABX.TO",
       "name": "BARRICK MINING",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.9012,
       "predicted_return_12m": 1.5513,
       "current_price": 53.74,
       "snapshot": {
@@ -287,6 +299,7 @@
       "yf_ticker": "ELD.TO",
       "name": "ELDORADO GOLD",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.8768,
       "predicted_return_12m": 1.5269,
       "current_price": 44.73,
       "snapshot": {
@@ -312,6 +325,7 @@
       "yf_ticker": "PAAS.TO",
       "name": "PAN AMERICAN SILVER",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.8265,
       "predicted_return_12m": 1.4766,
       "current_price": 63.041,
       "snapshot": {
@@ -337,6 +351,7 @@
       "yf_ticker": "FM.TO",
       "name": "FIRST QUANTUM MINERALS",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.7292,
       "predicted_return_12m": 1.3793,
       "current_price": 42.12,
       "snapshot": {
@@ -362,6 +377,7 @@
       "yf_ticker": "CVE.TO",
       "name": "CENOVUS ENERGY",
       "sector": "Energy",
+      "predicted_excess_return_12m": 0.7189,
       "predicted_return_12m": 1.369,
       "current_price": 40.38,
       "snapshot": {
@@ -387,6 +403,7 @@
       "yf_ticker": "EQX.TO",
       "name": "EQUINOX GOLD",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.6775,
       "predicted_return_12m": 1.3276,
       "current_price": 13.4737,
       "snapshot": {
@@ -412,6 +429,7 @@
       "yf_ticker": "ATRL.TO",
       "name": "ATKINSREALIS GROUP INC",
       "sector": "Industrials",
+      "predicted_excess_return_12m": 0.5951,
       "predicted_return_12m": 1.2452,
       "current_price": 91.1393,
       "snapshot": {
@@ -437,6 +455,7 @@
       "yf_ticker": "TECK-B.TO",
       "name": "TECK RESOURCES SUBORDINATE VOTING",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.5689,
       "predicted_return_12m": 1.219,
       "current_price": 91.02,
       "snapshot": {
@@ -462,6 +481,7 @@
       "yf_ticker": "AG.TO",
       "name": "FIRST MAJESTIC SILVER",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.5057,
       "predicted_return_12m": 1.1558,
       "current_price": 23.2014,
       "snapshot": {
@@ -487,6 +507,7 @@
       "yf_ticker": "CS.TO",
       "name": "CAPSTONE COPPER CORP",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.4749,
       "predicted_return_12m": 1.125,
       "current_price": 14.44,
       "snapshot": {
@@ -512,6 +533,7 @@
       "yf_ticker": "TRI.TO",
       "name": "THOMSON REUTERS CORP",
       "sector": "Industrials",
+      "predicted_excess_return_12m": 0.4277,
       "predicted_return_12m": 1.0778,
       "current_price": 152.1271,
       "snapshot": {
@@ -537,6 +559,7 @@
       "yf_ticker": "IVN.TO",
       "name": "IVANHOE MINES CLASS A",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.418,
       "predicted_return_12m": 1.0681,
       "current_price": 10.83,
       "snapshot": {
@@ -562,6 +585,7 @@
       "yf_ticker": "GMIN.TO",
       "name": "G MINING VENTURES CORP",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.3187,
       "predicted_return_12m": 0.9688,
       "current_price": 45.9,
       "snapshot": {
@@ -587,6 +611,7 @@
       "yf_ticker": "NXE.TO",
       "name": "NEXGEN ENERGY LTD",
       "sector": "Energy",
+      "predicted_excess_return_12m": 0.3077,
       "predicted_return_12m": 0.9578,
       "current_price": 13.7,
       "snapshot": {
@@ -612,6 +637,7 @@
       "yf_ticker": "CSU.TO",
       "name": "CONSTELLATION SOFTWARE",
       "sector": "Information Technology",
+      "predicted_excess_return_12m": 0.2701,
       "predicted_return_12m": 0.9203,
       "current_price": 3224.99,
       "snapshot": {
@@ -637,6 +663,7 @@
       "yf_ticker": "CCO.TO",
       "name": "CAMECO",
       "sector": "Energy",
+      "predicted_excess_return_12m": 0.2238,
       "predicted_return_12m": 0.8739,
       "current_price": 130.98,
       "snapshot": {
@@ -662,6 +689,7 @@
       "yf_ticker": "FTT.TO",
       "name": "FINNING INTERNATIONAL INC",
       "sector": "Industrials",
+      "predicted_excess_return_12m": 0.2155,
       "predicted_return_12m": 0.8656,
       "current_price": 99.4025,
       "snapshot": {
@@ -687,6 +715,7 @@
       "yf_ticker": "OR.TO",
       "name": "OR ROYALTIES INC",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.1951,
       "predicted_return_12m": 0.8452,
       "current_price": 43.3,
       "snapshot": {
@@ -712,6 +741,7 @@
       "yf_ticker": "CLS.TO",
       "name": "CELESTICA",
       "sector": "Information Technology",
+      "predicted_excess_return_12m": 0.1694,
       "predicted_return_12m": 0.8195,
       "current_price": 523.74,
       "snapshot": {
@@ -737,6 +767,7 @@
       "yf_ticker": "BBD-B.TO",
       "name": "BOMBARDIER CLASS B",
       "sector": "Industrials",
+      "predicted_excess_return_12m": 0.1322,
       "predicted_return_12m": 0.7823,
       "current_price": 363.5,
       "snapshot": {
@@ -762,6 +793,7 @@
       "yf_ticker": "GIL.TO",
       "name": "GILDAN ACTIVEWEAR",
       "sector": "Consumer Discretionary",
+      "predicted_excess_return_12m": 0.1101,
       "predicted_return_12m": 0.7602,
       "current_price": 79.4415,
       "snapshot": {
@@ -787,6 +819,7 @@
       "yf_ticker": "ARX.TO",
       "name": "ARC RESOURCES",
       "sector": "Energy",
+      "predicted_excess_return_12m": 0.0795,
       "predicted_return_12m": 0.7296,
       "current_price": 33.07,
       "snapshot": {
@@ -812,6 +845,7 @@
       "yf_ticker": "LUG.TO",
       "name": "LUNDIN GOLD",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.0662,
       "predicted_return_12m": 0.7163,
       "current_price": 81.6,
       "snapshot": {
@@ -837,6 +871,7 @@
       "yf_ticker": "WPM.TO",
       "name": "WHEATON PRECIOUS METALS",
       "sector": "Materials",
+      "predicted_excess_return_12m": 0.033,
       "predicted_return_12m": 0.6831,
       "current_price": 162.2052,
       "snapshot": {
@@ -862,6 +897,7 @@
       "yf_ticker": "SHOP.TO",
       "name": "SHOPIFY SUBORDINATE VOTING CLASS A",
       "sector": "Information Technology",
+      "predicted_excess_return_12m": 0.0256,
       "predicted_return_12m": 0.6757,
       "current_price": 173.41,
       "snapshot": {
@@ -887,6 +923,7 @@
       "yf_ticker": "WCP.TO",
       "name": "WHITECAP RESOURCES INC",
       "sector": "Energy",
+      "predicted_excess_return_12m": 0.0017,
       "predicted_return_12m": 0.6518,
       "current_price": 16.27,
       "snapshot": {
@@ -912,6 +949,7 @@
       "yf_ticker": "MG.TO",
       "name": "MAGNA INTERNATIONAL",
       "sector": "Consumer Discretionary",
+      "predicted_excess_return_12m": -0.0297,
       "predicted_return_12m": 0.6205,
       "current_price": 97.9624,
       "snapshot": {
@@ -937,6 +975,7 @@
       "yf_ticker": "TFII.TO",
       "name": "TFI INTERNATIONAL",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.0866,
       "predicted_return_12m": 0.5636,
       "current_price": 199.26,
       "snapshot": {
@@ -962,6 +1001,7 @@
       "yf_ticker": "ATZ.TO",
       "name": "ARITZIA SUBORDINATE VOTING",
       "sector": "Consumer Discretionary",
+      "predicted_excess_return_12m": -0.0878,
       "predicted_return_12m": 0.5623,
       "current_price": 140.21,
       "snapshot": {
@@ -987,6 +1027,7 @@
       "yf_ticker": "GFL.TO",
       "name": "GFL ENVIRONMENTAL SUBORDINATE VOTI",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.1394,
       "predicted_return_12m": 0.5108,
       "current_price": 59.23,
       "snapshot": {
@@ -1012,6 +1053,7 @@
       "yf_ticker": "CNQ.TO",
       "name": "CANADIAN NATURAL RESOURCES LTD",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.1415,
       "predicted_return_12m": 0.5086,
       "current_price": 64.93,
       "snapshot": {
@@ -1037,6 +1079,7 @@
       "yf_ticker": "DSG.TO",
       "name": "DESCARTES SYSTEMS GROUP",
       "sector": "Information Technology",
+      "predicted_excess_return_12m": -0.1468,
       "predicted_return_12m": 0.5034,
       "current_price": 108.9,
       "snapshot": {
@@ -1062,6 +1105,7 @@
       "yf_ticker": "NTR.TO",
       "name": "NUTRIEN LTD",
       "sector": "Materials",
+      "predicted_excess_return_12m": -0.1797,
       "predicted_return_12m": 0.4704,
       "current_price": 94.21,
       "snapshot": {
@@ -1087,6 +1131,7 @@
       "yf_ticker": "FNV.TO",
       "name": "FRANCO NEVADA",
       "sector": "Materials",
+      "predicted_excess_return_12m": -0.1938,
       "predicted_return_12m": 0.4563,
       "current_price": 307.76,
       "snapshot": {
@@ -1112,6 +1157,7 @@
       "yf_ticker": "GIB-A.TO",
       "name": "CGI INC CLASS A",
       "sector": "Information Technology",
+      "predicted_excess_return_12m": -0.2106,
       "predicted_return_12m": 0.4395,
       "current_price": 104.6887,
       "snapshot": {
@@ -1137,6 +1183,7 @@
       "yf_ticker": "SU.TO",
       "name": "SUNCOR ENERGY INC",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.2126,
       "predicted_return_12m": 0.4375,
       "current_price": 90.79,
       "snapshot": {
@@ -1162,6 +1209,7 @@
       "yf_ticker": "IMO.TO",
       "name": "IMPERIAL OIL LTD",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.2164,
       "predicted_return_12m": 0.4337,
       "current_price": 179.56,
       "snapshot": {
@@ -1187,6 +1235,7 @@
       "yf_ticker": "STN.TO",
       "name": "STANTEC",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.2184,
       "predicted_return_12m": 0.4317,
       "current_price": 102.1,
       "snapshot": {
@@ -1212,6 +1261,7 @@
       "yf_ticker": "GWO.TO",
       "name": "GREAT WEST LIFECO INC",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.2313,
       "predicted_return_12m": 0.4189,
       "current_price": 93.29,
       "snapshot": {
@@ -1237,6 +1287,7 @@
       "yf_ticker": "TOU.TO",
       "name": "TOURMALINE OIL CORP",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.2389,
       "predicted_return_12m": 0.4112,
       "current_price": 60.87,
       "snapshot": {
@@ -1262,6 +1313,7 @@
       "yf_ticker": "TIH.TO",
       "name": "TOROMONT INDUSTRIES LTD",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.2676,
       "predicted_return_12m": 0.3825,
       "current_price": 221.93,
       "snapshot": {
@@ -1287,6 +1339,7 @@
       "yf_ticker": "IFC.TO",
       "name": "INTACT FINANCIAL CORP",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.2836,
       "predicted_return_12m": 0.3665,
       "current_price": 283.16,
       "snapshot": {
@@ -1312,6 +1365,7 @@
       "yf_ticker": "CCL-B.TO",
       "name": "CCL INDUSTRIES CLASS B",
       "sector": "Materials",
+      "predicted_excess_return_12m": -0.2838,
       "predicted_return_12m": 0.3664,
       "current_price": 95.01,
       "snapshot": {
@@ -1337,6 +1391,7 @@
       "yf_ticker": "RCI-B.TO",
       "name": "ROGERS COMMUNICATIONS NON-VOTING I",
       "sector": "Communication",
+      "predicted_excess_return_12m": -0.287,
       "predicted_return_12m": 0.3631,
       "current_price": 47.63,
       "snapshot": {
@@ -1362,6 +1417,7 @@
       "yf_ticker": "X.TO",
       "name": "TMX GROUP LTD",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.29,
       "predicted_return_12m": 0.3601,
       "current_price": 52.2674,
       "snapshot": {
@@ -1387,6 +1443,7 @@
       "yf_ticker": "TRP.TO",
       "name": "TC ENERGY",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.3048,
       "predicted_return_12m": 0.3453,
       "current_price": 91.96,
       "snapshot": {
@@ -1412,6 +1469,7 @@
       "yf_ticker": "BEP-UN.TO",
       "name": "BROOKFIELD RENEWABLE PARTNERS NON",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.3085,
       "predicted_return_12m": 0.3416,
       "current_price": 46.59,
       "snapshot": {
@@ -1437,6 +1495,7 @@
       "yf_ticker": "CAE.TO",
       "name": "CAE INC",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.3108,
       "predicted_return_12m": 0.3393,
       "current_price": 37.7,
       "snapshot": {
@@ -1462,6 +1521,7 @@
       "yf_ticker": "FFH.TO",
       "name": "FAIRFAX FINANCIAL HOLDINGS SUB VOT",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3136,
       "predicted_return_12m": 0.3365,
       "current_price": 2407.0701,
       "snapshot": {
@@ -1487,6 +1547,7 @@
       "yf_ticker": "POW.TO",
       "name": "POWER CORPORATION OF CANADA",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3171,
       "predicted_return_12m": 0.333,
       "current_price": 95.94,
       "snapshot": {
@@ -1512,6 +1573,7 @@
       "yf_ticker": "IAG.TO",
       "name": "IA FINANCIAL INC",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3189,
       "predicted_return_12m": 0.3312,
       "current_price": 206.0195,
       "snapshot": {
@@ -1537,6 +1599,7 @@
       "yf_ticker": "WSP.TO",
       "name": "WSP GLOBAL INC",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.3212,
       "predicted_return_12m": 0.3289,
       "current_price": 180.71,
       "snapshot": {
@@ -1562,6 +1625,7 @@
       "yf_ticker": "BNS.TO",
       "name": "BANK OF NOVA SCOTIA",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3221,
       "predicted_return_12m": 0.328,
       "current_price": 122.68,
       "snapshot": {
@@ -1587,6 +1651,7 @@
       "yf_ticker": "BMO.TO",
       "name": "BANK OF MONTREAL",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.325,
       "predicted_return_12m": 0.3251,
       "current_price": 253.05,
       "snapshot": {
@@ -1612,6 +1677,7 @@
       "yf_ticker": "MFC.TO",
       "name": "MANULIFE FINANCIAL",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3253,
       "predicted_return_12m": 0.3248,
       "current_price": 62.4591,
       "snapshot": {
@@ -1637,6 +1703,7 @@
       "yf_ticker": "CM.TO",
       "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3302,
       "predicted_return_12m": 0.32,
       "current_price": 166.06,
       "snapshot": {
@@ -1662,6 +1729,7 @@
       "yf_ticker": "NA.TO",
       "name": "NATIONAL BANK OF CANADA",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3317,
       "predicted_return_12m": 0.3184,
       "current_price": 226.1,
       "snapshot": {
@@ -1687,6 +1755,7 @@
       "yf_ticker": "SAP.TO",
       "name": "SAPUTO",
       "sector": "Consumer Staples",
+      "predicted_excess_return_12m": -0.3352,
       "predicted_return_12m": 0.3149,
       "current_price": 39.4,
       "snapshot": {
@@ -1712,6 +1781,7 @@
       "yf_ticker": "TD.TO",
       "name": "TORONTO DOMINION",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3387,
       "predicted_return_12m": 0.3114,
       "current_price": 167.9,
       "snapshot": {
@@ -1737,6 +1807,7 @@
       "yf_ticker": "CPX.TO",
       "name": "CAPITAL POWER CORP",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.3392,
       "predicted_return_12m": 0.3109,
       "current_price": 67.32,
       "snapshot": {
@@ -1762,6 +1833,7 @@
       "yf_ticker": "QBR-B.TO",
       "name": "QUEBECOR CLASS B",
       "sector": "Communication",
+      "predicted_excess_return_12m": -0.3424,
       "predicted_return_12m": 0.3077,
       "current_price": 63.2653,
       "snapshot": {
@@ -1787,6 +1859,7 @@
       "yf_ticker": "MRU.TO",
       "name": "METRO",
       "sector": "Consumer Staples",
+      "predicted_excess_return_12m": -0.3445,
       "predicted_return_12m": 0.3056,
       "current_price": 92.78,
       "snapshot": {
@@ -1812,6 +1885,7 @@
       "yf_ticker": "PSK.TO",
       "name": "PRAIRIESKY ROYALTY",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.3483,
       "predicted_return_12m": 0.3018,
       "current_price": 34.09,
       "snapshot": {
@@ -1837,6 +1911,7 @@
       "yf_ticker": "ATD.TO",
       "name": "ALIMENTATION COUCHE TARD INC",
       "sector": "Consumer Staples",
+      "predicted_excess_return_12m": -0.351,
       "predicted_return_12m": 0.2991,
       "current_price": 93.13,
       "snapshot": {
@@ -1862,6 +1937,7 @@
       "yf_ticker": "ALA.TO",
       "name": "ALTAGAS LTD",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.3538,
       "predicted_return_12m": 0.2963,
       "current_price": 55.58,
       "snapshot": {
@@ -1887,6 +1963,7 @@
       "yf_ticker": "ENB.TO",
       "name": "ENBRIDGE",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.3543,
       "predicted_return_12m": 0.2958,
       "current_price": 74.0709,
       "snapshot": {
@@ -1912,6 +1989,7 @@
       "yf_ticker": "L.TO",
       "name": "LOBLAW COMPANIES LTD",
       "sector": "Consumer Staples",
+      "predicted_excess_return_12m": -0.3671,
       "predicted_return_12m": 0.283,
       "current_price": 65.31,
       "snapshot": {
@@ -1937,6 +2015,7 @@
       "yf_ticker": "WCN.TO",
       "name": "WASTE CONNECTIONS",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.3698,
       "predicted_return_12m": 0.2803,
       "current_price": 232.6243,
       "snapshot": {
@@ -1962,6 +2041,7 @@
       "yf_ticker": "PPL.TO",
       "name": "PEMBINA PIPELINE",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.3702,
       "predicted_return_12m": 0.2799,
       "current_price": 68.04,
       "snapshot": {
@@ -1987,6 +2067,7 @@
       "yf_ticker": "SLF.TO",
       "name": "SUN LIFE FINANCIAL INC",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.373,
       "predicted_return_12m": 0.2771,
       "current_price": 115.73,
       "snapshot": {
@@ -2012,6 +2093,7 @@
       "yf_ticker": "KEY.TO",
       "name": "KEYERA",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.3735,
       "predicted_return_12m": 0.2766,
       "current_price": 58.39,
       "snapshot": {
@@ -2037,6 +2119,7 @@
       "yf_ticker": "EMA.TO",
       "name": "EMERA INC",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.3737,
       "predicted_return_12m": 0.2764,
       "current_price": 73.66,
       "snapshot": {
@@ -2062,6 +2145,7 @@
       "yf_ticker": "WN.TO",
       "name": "GEORGE WESTON",
       "sector": "Consumer Staples",
+      "predicted_excess_return_12m": -0.3766,
       "predicted_return_12m": 0.2735,
       "current_price": 103.23,
       "snapshot": {
@@ -2087,6 +2171,7 @@
       "yf_ticker": "CTC-A.TO",
       "name": "CANADIAN TIRE LTD CLASS A",
       "sector": "Consumer Discretionary",
+      "predicted_excess_return_12m": -0.3817,
       "predicted_return_12m": 0.2684,
       "current_price": 205.29,
       "snapshot": {
@@ -2112,6 +2197,7 @@
       "yf_ticker": "H.TO",
       "name": "HYDRO ONE",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.3853,
       "predicted_return_12m": 0.2648,
       "current_price": 57.98,
       "snapshot": {
@@ -2137,6 +2223,7 @@
       "yf_ticker": "BN.TO",
       "name": "BROOKFIELD CLASS A",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3947,
       "predicted_return_12m": 0.2554,
       "current_price": 62.81,
       "snapshot": {
@@ -2162,6 +2249,7 @@
       "yf_ticker": "RY.TO",
       "name": "ROYAL BANK OF CANADA",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.3952,
       "predicted_return_12m": 0.2549,
       "current_price": 293.47,
       "snapshot": {
@@ -2187,6 +2275,7 @@
       "yf_ticker": "T.TO",
       "name": "TELUS",
       "sector": "Communication",
+      "predicted_excess_return_12m": -0.4131,
       "predicted_return_12m": 0.237,
       "current_price": 13.39,
       "snapshot": {
@@ -2212,6 +2301,7 @@
       "yf_ticker": "RBA.TO",
       "name": "RB GLOBAL",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.42,
       "predicted_return_12m": 0.2301,
       "current_price": 156.06,
       "snapshot": {
@@ -2237,6 +2327,7 @@
       "yf_ticker": "FTS.TO",
       "name": "FORTIS",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.4222,
       "predicted_return_12m": 0.2279,
       "current_price": 78.9611,
       "snapshot": {
@@ -2262,6 +2353,7 @@
       "yf_ticker": "BIP-UN.TO",
       "name": "BROOKFIELD INFRASTRUCTURE PARTNERS",
       "sector": "Utilities",
+      "predicted_excess_return_12m": -0.4289,
       "predicted_return_12m": 0.2212,
       "current_price": 56.14,
       "snapshot": {
@@ -2287,6 +2379,7 @@
       "yf_ticker": "EFN.TO",
       "name": "ELEMENT FLEET MANAGEMENT",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.4291,
       "predicted_return_12m": 0.221,
       "current_price": 32.16,
       "snapshot": {
@@ -2312,6 +2405,7 @@
       "yf_ticker": "DOL.TO",
       "name": "DOLLARAMA",
       "sector": "Consumer Discretionary",
+      "predicted_excess_return_12m": -0.4295,
       "predicted_return_12m": 0.2206,
       "current_price": 190.9,
       "snapshot": {
@@ -2337,6 +2431,7 @@
       "yf_ticker": "CP.TO",
       "name": "CANADIAN PACIFIC KANSAS CITY",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.456,
       "predicted_return_12m": 0.1941,
       "current_price": 127.42,
       "snapshot": {
@@ -2362,6 +2457,7 @@
       "yf_ticker": "CNR.TO",
       "name": "CANADIAN NATIONAL RAILWAY",
       "sector": "Industrials",
+      "predicted_excess_return_12m": -0.4568,
       "predicted_return_12m": 0.1933,
       "current_price": 179.05,
       "snapshot": {
@@ -2387,6 +2483,7 @@
       "yf_ticker": "QSR.TO",
       "name": "RESTAURANTS BRANDS INTERNATIONAL",
       "sector": "Consumer Discretionary",
+      "predicted_excess_return_12m": -0.4569,
       "predicted_return_12m": 0.1932,
       "current_price": 103.91,
       "snapshot": {
@@ -2412,6 +2509,7 @@
       "yf_ticker": "SOBO.TO",
       "name": "SOUTH BOW",
       "sector": "Energy",
+      "predicted_excess_return_12m": -0.4644,
       "predicted_return_12m": 0.1857,
       "current_price": 50.94,
       "snapshot": {
@@ -2437,6 +2535,7 @@
       "yf_ticker": "BCE.TO",
       "name": "BCE INC",
       "sector": "Communication",
+      "predicted_excess_return_12m": -0.4844,
       "predicted_return_12m": 0.1657,
       "current_price": 30.95,
       "snapshot": {
@@ -2462,6 +2561,7 @@
       "yf_ticker": "BAM.TO",
       "name": "BROOKFIELD ASSET MANAGEMENT VOTING",
       "sector": "Financials",
+      "predicted_excess_return_12m": -0.5355,
       "predicted_return_12m": 0.1146,
       "current_price": 73.16,
       "snapshot": {
@@ -2487,6 +2587,7 @@
       "yf_ticker": "OTEX.TO",
       "name": "OPEN TEXT",
       "sector": "Information Technology",
+      "predicted_excess_return_12m": -0.5657,
       "predicted_return_12m": 0.0844,
       "current_price": 37.16,
       "snapshot": {
