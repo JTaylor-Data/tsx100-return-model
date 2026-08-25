@@ -1,0 +1,9 @@
+pandas
+numpy
+yfinance
+lightgbm
+shap
+scikit-learn
+requests
+pyarrow
+scipy

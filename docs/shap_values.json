@@ -1,0 +1,4717 @@
+{
+  "generated_at": "2026-08-25T18:49:19.958031+00:00",
+  "as_of_date": "2026-08-01",
+  "base_value": 0.2063,
+  "global_importance": [
+    {
+      "feature": "revenue_growth_yoy",
+      "mean_abs_shap": 0.15968
+    },
+    {
+      "feature": "vol_252d",
+      "mean_abs_shap": 0.13694
+    },
+    {
+      "feature": "debt_equity",
+      "mean_abs_shap": 0.05979
+    },
+    {
+      "feature": "gross_margin",
+      "mean_abs_shap": 0.0597
+    },
+    {
+      "feature": "oil_chg_3m",
+      "mean_abs_shap": 0.0498
+    },
+    {
+      "feature": "value_z_universe",
+      "mean_abs_shap": 0.04259
+    },
+    {
+      "feature": "beta_252d",
+      "mean_abs_shap": 0.03471
+    },
+    {
+      "feature": "pb_ratio",
+      "mean_abs_shap": 0.02906
+    },
+    {
+      "feature": "vol_63d",
+      "mean_abs_shap": 0.0281
+    },
+    {
+      "feature": "mom_12m",
+      "mean_abs_shap": 0.02638
+    },
+    {
+      "feature": "usdcad_chg_3m",
+      "mean_abs_shap": 0.02244
+    },
+    {
+      "feature": "roa",
+      "mean_abs_shap": 0.02225
+    },
+    {
+      "feature": "operating_margin",
+      "mean_abs_shap": 0.02202
+    },
+    {
+      "feature": "momentum_z_universe",
+      "mean_abs_shap": 0.01591
+    },
+    {
+      "feature": "roe",
+      "mean_abs_shap": 0.01525
+    },
+    {
+      "feature": "sector",
+      "mean_abs_shap": 0.01361
+    },
+    {
+      "feature": "boc_rate",
+      "mean_abs_shap": 0.01234
+    },
+    {
+      "feature": "yield_curve_2s10s",
+      "mean_abs_shap": 0.00834
+    },
+    {
+      "feature": "pe_ratio",
+      "mean_abs_shap": 0.0069
+    },
+    {
+      "feature": "ev_ebitda",
+      "mean_abs_shap": 0.00634
+    },
+    {
+      "feature": "rel_strength_sector",
+      "mean_abs_shap": 0.00592
+    },
+    {
+      "feature": "div_yield",
+      "mean_abs_shap": 0.00527
+    },
+    {
+      "feature": "mom_3m",
+      "mean_abs_shap": 0.00352
+    },
+    {
+      "feature": "mom_6m",
+      "mean_abs_shap": 0.00311
+    },
+    {
+      "feature": "payout_ratio",
+      "mean_abs_shap": 0.00309
+    },
+    {
+      "feature": "rel_strength_tsx",
+      "mean_abs_shap": 0.00122
+    },
+    {
+      "feature": "mom_1m",
+      "mean_abs_shap": 0.00078
+    }
+  ],
+  "stocks": [
+    {
+      "ticker": "MFC",
+      "predicted_return": 0.3248,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1962,
+          "shap": -0.07903
+        },
+        {
+          "feature": "roa",
+          "value": 0.0056,
+          "shap": 0.0693
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.288,
+          "shap": 0.05988
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03932
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.0558,
+          "shap": 0.03563
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.0198
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.5399,
+          "shap": -0.01924
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5154,
+          "shap": 0.01572
+        }
+      ]
+    },
+    {
+      "ticker": "BIP.UN",
+      "predicted_return": 0.2212,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1875,
+          "shap": -0.10043
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.098,
+          "shap": 0.06779
+        },
+        {
+          "feature": "roa",
+          "value": 0.006,
+          "shap": 0.05137
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03827
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.336,
+          "shap": 0.0218
+        },
+        {
+          "feature": "sector",
+          "value": "Utilities",
+          "shap": -0.02078
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2694,
+          "shap": 0.02054
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -1.019,
+          "shap": -0.01732
+        }
+      ]
+    },
+    {
+      "ticker": "WCN",
+      "predicted_return": 0.2803,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2285,
+          "shap": -0.11081
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.1,
+          "shap": 0.09939
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0614,
+          "shap": 0.06453
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04186
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4237,
+          "shap": 0.02547
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.0944,
+          "shap": -0.02008
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2362,
+          "shap": -0.01687
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.7783,
+          "shap": -0.01108
+        }
+      ]
+    },
+    {
+      "ticker": "BEP.UN",
+      "predicted_return": 0.3416,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0904,
+          "shap": 0.106
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2789,
+          "shap": -0.07083
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5469,
+          "shap": 0.05414
+        },
+        {
+          "feature": "roa",
+          "value": -0.0004,
+          "shap": 0.04922
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03762
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.421,
+          "shap": 0.02008
+        },
+        {
+          "feature": "sector",
+          "value": "Utilities",
+          "shap": -0.01856
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.3363,
+          "shap": -0.01604
+        }
+      ]
+    },
+    {
+      "ticker": "FTS",
+      "predicted_return": 0.2279,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1333,
+          "shap": -0.12574
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0575,
+          "shap": 0.08123
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.0912,
+          "shap": 0.06003
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.723,
+          "shap": -0.04945
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03353
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.6825,
+          "shap": 0.02737
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4103,
+          "shap": 0.02672
+        },
+        {
+          "feature": "sector",
+          "value": "Utilities",
+          "shap": -0.02052
+        }
+      ]
+    },
+    {
+      "ticker": "GWO",
+      "predicted_return": 0.4189,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1684,
+          "shap": -0.10995
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1262,
+          "shap": 0.0828
+        },
+        {
+          "feature": "roa",
+          "value": 0.0048,
+          "shap": 0.06263
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.4493,
+          "shap": 0.06172
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.8319,
+          "shap": 0.04826
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0352
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4587,
+          "shap": 0.02817
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1932,
+          "shap": -0.0153
+        }
+      ]
+    },
+    {
+      "ticker": "QBR.B",
+      "predicted_return": 0.3077,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2412,
+          "shap": -0.11955
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5717,
+          "shap": 0.06843
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0065,
+          "shap": 0.0682
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.0465,
+          "shap": 0.05992
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0347
+        },
+        {
+          "feature": "sector",
+          "value": "Communication",
+          "shap": -0.02959
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.6322,
+          "shap": 0.02841
+        },
+        {
+          "feature": "boc_rate",
+          "value": 2.25,
+          "shap": 0.02237
+        }
+      ]
+    },
+    {
+      "ticker": "GFL",
+      "predicted_return": 0.5108,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0777,
+          "shap": 0.13213
+        },
+        {
+          "feature": "roa",
+          "value": 0.1987,
+          "shap": 0.07447
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.273,
+          "shap": -0.071
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05081
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 1.0416,
+          "shap": 0.03671
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.2727,
+          "shap": -0.03544
+        },
+        {
+          "feature": "pe_ratio",
+          "value": 5.9289,
+          "shap": 0.02797
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2067,
+          "shap": 0.02748
+        }
+      ]
+    },
+    {
+      "ticker": "BCE",
+      "predicted_return": 0.1657,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1847,
+          "shap": -0.1086
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6845,
+          "shap": -0.08716
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0024,
+          "shap": 0.07762
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.2216,
+          "shap": 0.05409
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.2538,
+          "shap": 0.03941
+        },
+        {
+          "feature": "sector",
+          "value": "Communication",
+          "shap": -0.03886
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0333
+        },
+        {
+          "feature": "pe_ratio",
+          "value": 4.5582,
+          "shap": 0.02574
+        }
+      ]
+    },
+    {
+      "ticker": "T",
+      "predicted_return": 0.237,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2193,
+          "shap": -0.11919
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6213,
+          "shap": -0.08518
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0103,
+          "shap": 0.06768
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.321,
+          "shap": 0.06688
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.659,
+          "shap": -0.06567
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.1539,
+          "shap": 0.06361
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05797
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.3145,
+          "shap": 0.04269
+        }
+      ]
+    },
+    {
+      "ticker": "PAAS",
+      "predicted_return": 1.4766,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.2838,
+          "shap": 0.37706
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5519,
+          "shap": 0.23853
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1218,
+          "shap": 0.15966
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3592,
+          "shap": 0.12016
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3882,
+          "shap": 0.0988
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.5807,
+          "shap": 0.08541
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.06085
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06075
+        }
+      ]
+    },
+    {
+      "ticker": "POW",
+      "predicted_return": 0.333,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1965,
+          "shap": -0.09665
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1419,
+          "shap": 0.09266
+        },
+        {
+          "feature": "roa",
+          "value": 0.0028,
+          "shap": 0.06244
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03707
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3692,
+          "shap": 0.03055
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.4964,
+          "shap": 0.02291
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.7761,
+          "shap": -0.01149
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2138,
+          "shap": -0.01009
+        }
+      ]
+    },
+    {
+      "ticker": "H",
+      "predicted_return": 0.2648,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1334,
+          "shap": -0.13664
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0657,
+          "shap": 0.07905
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.1152,
+          "shap": 0.06332
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03419
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1483,
+          "shap": -0.02591
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3704,
+          "shap": 0.02508
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.309,
+          "shap": 0.02293
+        },
+        {
+          "feature": "sector",
+          "value": "Utilities",
+          "shap": -0.02247
+        }
+      ]
+    },
+    {
+      "ticker": "GIB.A",
+      "predicted_return": 0.4395,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0843,
+          "shap": 0.08865
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.316,
+          "shap": -0.08465
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.4212,
+          "shap": 0.07362
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.4115,
+          "shap": -0.05857
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0496
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.3146,
+          "shap": 0.03889
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.1641,
+          "shap": 0.02789
+        },
+        {
+          "feature": "sector",
+          "value": "Information Technology",
+          "shap": 0.02593
+        }
+      ]
+    },
+    {
+      "ticker": "CNQ",
+      "predicted_return": 0.5086,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.064,
+          "shap": 0.12327
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.301,
+          "shap": -0.07257
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.0171,
+          "shap": 0.0666
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3745,
+          "shap": 0.06201
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03425
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.7987,
+          "shap": 0.03193
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2129,
+          "shap": 0.02746
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.3256,
+          "shap": -0.02477
+        }
+      ]
+    },
+    {
+      "ticker": "GMIN",
+      "predicted_return": 0.9688,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.7009,
+          "shap": 0.28596
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 2.9977,
+          "shap": 0.25663
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6888,
+          "shap": -0.14189
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.13291
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0997,
+          "shap": 0.10383
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.6579,
+          "shap": 0.09972
+        },
+        {
+          "feature": "boc_rate",
+          "value": 2.25,
+          "shap": -0.08953
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.7845,
+          "shap": 0.07963
+        }
+      ]
+    },
+    {
+      "ticker": "GIL",
+      "predicted_return": 0.7602,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1066,
+          "shap": 0.22406
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.401,
+          "shap": 0.0927
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3122,
+          "shap": 0.06541
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.5439,
+          "shap": 0.04715
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04436
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.03252
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.147,
+          "shap": 0.03233
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 4.1291,
+          "shap": 0.02244
+        }
+      ]
+    },
+    {
+      "ticker": "TRP",
+      "predicted_return": 0.3453,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1732,
+          "shap": -0.12529
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.4437,
+          "shap": 0.10203
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1066,
+          "shap": 0.09812
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1858,
+          "shap": -0.03898
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03586
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 3.5067,
+          "shap": 0.02271
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5015,
+          "shap": 0.0219
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.4743,
+          "shap": -0.01844
+        }
+      ]
+    },
+    {
+      "ticker": "TD",
+      "predicted_return": 0.3114,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0893,
+          "shap": 0.10264
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.1643,
+          "shap": -0.10158
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03634
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.7279,
+          "shap": 0.02992
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.2191,
+          "shap": 0.02316
+        },
+        {
+          "feature": "pe_ratio",
+          "value": 14.5242,
+          "shap": 0.02251
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01477
+        },
+        {
+          "feature": "roa",
+          "value": 0.0098,
+          "shap": 0.01224
+        }
+      ]
+    },
+    {
+      "ticker": "PSK",
+      "predicted_return": 0.3018,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2183,
+          "shap": -0.1031
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6761,
+          "shap": -0.08017
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.5905,
+          "shap": 0.0705
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0609,
+          "shap": 0.06542
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0954,
+          "shap": 0.06397
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.1063,
+          "shap": 0.06144
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03586
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 3.1201,
+          "shap": 0.02307
+        }
+      ]
+    },
+    {
+      "ticker": "CP",
+      "predicted_return": 0.1941,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2207,
+          "shap": -0.10352
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0366,
+          "shap": 0.06509
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03766
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.372,
+          "shap": 0.02303
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.493,
+          "shap": 0.01931
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.2267,
+          "shap": 0.01826
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.215,
+          "shap": -0.01677
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.2491,
+          "shap": -0.01658
+        }
+      ]
+    },
+    {
+      "ticker": "LUN",
+      "predicted_return": 1.8657,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.2395,
+          "shap": 0.41332
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5552,
+          "shap": 0.24292
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0679,
+          "shap": 0.22508
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3345,
+          "shap": 0.13428
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3449,
+          "shap": 0.10794
+        },
+        {
+          "feature": "mom_12m",
+          "value": 1.5063,
+          "shap": 0.09177
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6007,
+          "shap": 0.08792
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 2.6319,
+          "shap": 0.08745
+        }
+      ]
+    },
+    {
+      "ticker": "PPL",
+      "predicted_return": 0.2799,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1957,
+          "shap": -0.12098
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0534,
+          "shap": 0.09936
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.1141,
+          "shap": 0.03982
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03669
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3243,
+          "shap": 0.0238
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4105,
+          "shap": 0.02362
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.3574,
+          "shap": 0.02254
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2178,
+          "shap": -0.018
+        }
+      ]
+    },
+    {
+      "ticker": "FTT",
+      "predicted_return": 0.8656,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0695,
+          "shap": 0.23467
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3348,
+          "shap": 0.12183
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.393,
+          "shap": 0.09197
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2308,
+          "shap": 0.06926
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04472
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.04124
+        },
+        {
+          "feature": "beta_252d",
+          "value": 1.3036,
+          "shap": 0.03045
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 4.666,
+          "shap": 0.01978
+        }
+      ]
+    },
+    {
+      "ticker": "CNR",
+      "predicted_return": 0.1933,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2113,
+          "shap": -0.10525
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0151,
+          "shap": 0.06857
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03719
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3947,
+          "shap": 0.03131
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4237,
+          "shap": 0.02407
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.5713,
+          "shap": -0.01867
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.4272,
+          "shap": -0.01815
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1872,
+          "shap": -0.01326
+        }
+      ]
+    },
+    {
+      "ticker": "MG",
+      "predicted_return": 0.6205,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0193,
+          "shap": 0.17449
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3542,
+          "shap": 0.0684
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.1426,
+          "shap": 0.04375
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03711
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.03307
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.1975,
+          "shap": 0.02085
+        },
+        {
+          "feature": "roa",
+          "value": 0.0264,
+          "shap": 0.01755
+        },
+        {
+          "feature": "yield_curve_2s10s",
+          "value": 0.74,
+          "shap": 0.01533
+        }
+      ]
+    },
+    {
+      "ticker": "NTR",
+      "predicted_return": 0.4704,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0352,
+          "shap": 0.14386
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3197,
+          "shap": -0.04939
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03747
+        },
+        {
+          "feature": "sector",
+          "value": "Materials",
+          "shap": 0.0328
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5201,
+          "shap": 0.03009
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.7931,
+          "shap": 0.02767
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3105,
+          "shap": 0.02736
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.2398,
+          "shap": -0.01975
+        }
+      ]
+    },
+    {
+      "ticker": "BMO",
+      "predicted_return": 0.3251,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1853,
+          "shap": -0.09914
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1267,
+          "shap": 0.09282
+        },
+        {
+          "feature": "roa",
+          "value": 0.0059,
+          "shap": 0.06243
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03564
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4506,
+          "shap": 0.03055
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.0373,
+          "shap": 0.02843
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.8809,
+          "shap": -0.01785
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01429
+        }
+      ]
+    },
+    {
+      "ticker": "CCL.B",
+      "predicted_return": 0.3664,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0578,
+          "shap": 0.1215
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2338,
+          "shap": -0.09893
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.4007,
+          "shap": 0.06074
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03843
+        },
+        {
+          "feature": "sector",
+          "value": "Materials",
+          "shap": 0.03041
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4992,
+          "shap": 0.02976
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.2405,
+          "shap": -0.0266
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2996,
+          "shap": 0.02519
+        }
+      ]
+    },
+    {
+      "ticker": "IVN",
+      "predicted_return": 1.0681,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 9.8191,
+          "shap": 0.24683
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.569,
+          "shap": 0.17673
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.2145,
+          "shap": 0.15165
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.0384,
+          "shap": 0.11553
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.07001
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.5881,
+          "shap": 0.06936
+        },
+        {
+          "feature": "roa",
+          "value": 0.0343,
+          "shap": 0.05458
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.05209
+        }
+      ]
+    },
+    {
+      "ticker": "NA",
+      "predicted_return": 0.3184,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1756,
+          "shap": -0.09618
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.2287,
+          "shap": 0.0947
+        },
+        {
+          "feature": "roa",
+          "value": 0.007,
+          "shap": 0.0622
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0364
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4385,
+          "shap": 0.0321
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.6184,
+          "shap": 0.02288
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.6662,
+          "shap": -0.01648
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01499
+        }
+      ]
+    },
+    {
+      "ticker": "ELD",
+      "predicted_return": 1.5269,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.3626,
+          "shap": 0.37481
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5601,
+          "shap": 0.25157
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3014,
+          "shap": 0.13647
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.597,
+          "shap": 0.11461
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4809,
+          "shap": 0.1034
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6545,
+          "shap": 0.09014
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06521
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.05489
+        }
+      ]
+    },
+    {
+      "ticker": "CAE",
+      "predicted_return": 0.3393,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0438,
+          "shap": 0.07081
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3175,
+          "shap": -0.07062
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04047
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.283,
+          "shap": 0.039
+        },
+        {
+          "feature": "roa",
+          "value": 0.0281,
+          "shap": 0.02418
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.1607,
+          "shap": -0.02405
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.0824,
+          "shap": -0.02183
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.2865,
+          "shap": 0.01986
+        }
+      ]
+    },
+    {
+      "ticker": "SSRM",
+      "predicted_return": 1.802,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.6368,
+          "shap": 0.33874
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.6834,
+          "shap": 0.3068
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1077,
+          "shap": 0.14038
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.13803
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5278,
+          "shap": 0.12746
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5198,
+          "shap": 0.12453
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.7057,
+          "shap": 0.09556
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 1.7982,
+          "shap": 0.0666
+        }
+      ]
+    },
+    {
+      "ticker": "L",
+      "predicted_return": 0.283,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2146,
+          "shap": -0.12401
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0629,
+          "shap": 0.07735
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.0575,
+          "shap": 0.07129
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03552
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3135,
+          "shap": 0.02398
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2382,
+          "shap": -0.0215
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.1842,
+          "shap": 0.02086
+        },
+        {
+          "feature": "sector",
+          "value": "Consumer Staples",
+          "shap": 0.01743
+        }
+      ]
+    },
+    {
+      "ticker": "CVE",
+      "predicted_return": 1.369,
+      "top_features": [
+        {
+          "feature": "debt_equity",
+          "value": 0.4493,
+          "shap": 0.21633
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0862,
+          "shap": 0.18271
+        },
+        {
+          "feature": "mom_12m",
+          "value": 1.1288,
+          "shap": 0.17804
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 1.7456,
+          "shap": 0.10093
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3578,
+          "shap": 0.08501
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.224,
+          "shap": 0.07353
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.405,
+          "shap": 0.07069
+        },
+        {
+          "feature": "roe",
+          "value": 0.1243,
+          "shap": 0.05455
+        }
+      ]
+    },
+    {
+      "ticker": "ATRL",
+      "predicted_return": 1.2452,
+      "top_features": [
+        {
+          "feature": "gross_margin",
+          "value": 0.0884,
+          "shap": 0.279
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.138,
+          "shap": 0.20146
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 1.0422,
+          "shap": 0.11618
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3598,
+          "shap": 0.08652
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.238,
+          "shap": 0.08556
+        },
+        {
+          "feature": "roa",
+          "value": 0.2098,
+          "shap": 0.07805
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.05427
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05158
+        }
+      ]
+    },
+    {
+      "ticker": "OGC",
+      "predicted_return": 1.618,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.4631,
+          "shap": 0.40203
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.528,
+          "shap": 0.22781
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0221,
+          "shap": 0.17028
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.781,
+          "shap": 0.12016
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4635,
+          "shap": 0.11215
+        },
+        {
+          "feature": "roa",
+          "value": 0.1931,
+          "shap": 0.08274
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05942
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.05489
+        }
+      ]
+    },
+    {
+      "ticker": "IMO",
+      "predicted_return": 0.4337,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0742,
+          "shap": 0.10423
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1863,
+          "shap": 0.07476
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2738,
+          "shap": -0.05709
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03711
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.2466,
+          "shap": 0.02675
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 3.9019,
+          "shap": 0.02257
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.1227,
+          "shap": 0.0173
+        },
+        {
+          "feature": "roe",
+          "value": 0.1469,
+          "shap": 0.01452
+        }
+      ]
+    },
+    {
+      "ticker": "WSP",
+      "predicted_return": 0.3289,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.131,
+          "shap": 0.12143
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.8154,
+          "shap": -0.09712
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.3876,
+          "shap": 0.09135
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.07436
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.7634,
+          "shap": -0.06796
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2995,
+          "shap": -0.06714
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3618,
+          "shap": 0.03681
+        },
+        {
+          "feature": "rel_strength_sector",
+          "value": -0.2552,
+          "shap": 0.03386
+        }
+      ]
+    },
+    {
+      "ticker": "EMA",
+      "predicted_return": 0.2764,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1375,
+          "shap": -0.13227
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.2189,
+          "shap": 0.08655
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.168,
+          "shap": 0.05763
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03362
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.661,
+          "shap": 0.0286
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4625,
+          "shap": 0.02688
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1389,
+          "shap": -0.025
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4364,
+          "shap": 0.02466
+        }
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "predicted_return": 0.8195,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.7408,
+          "shap": 0.38035
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.2846,
+          "shap": 0.17898
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.15767
+        },
+        {
+          "feature": "boc_rate",
+          "value": 2.25,
+          "shap": -0.12613
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 27.1539,
+          "shap": -0.11279
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.8135,
+          "shap": 0.10812
+        },
+        {
+          "feature": "sector",
+          "value": "Information Technology",
+          "shap": 0.06987
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.7254,
+          "shap": -0.06384
+        }
+      ]
+    },
+    {
+      "ticker": "SAP",
+      "predicted_return": 0.3149,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2492,
+          "shap": -0.11341
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0147,
+          "shap": 0.06737
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.147,
+          "shap": 0.05485
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03737
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3757,
+          "shap": 0.02898
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3302,
+          "shap": 0.02312
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.4095,
+          "shap": -0.01999
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.3454,
+          "shap": 0.0194
+        }
+      ]
+    },
+    {
+      "ticker": "SHOP",
+      "predicted_return": 0.6757,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.5783,
+          "shap": 0.25662
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.3014,
+          "shap": 0.20856
+        },
+        {
+          "feature": "ev_ebitda",
+          "value": 117.309,
+          "shap": -0.16556
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.014,
+          "shap": 0.14672
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 16.7825,
+          "shap": -0.10289
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4807,
+          "shap": 0.0876
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6285,
+          "shap": 0.05714
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05669
+        }
+      ]
+    },
+    {
+      "ticker": "TIH",
+      "predicted_return": 0.3825,
+      "top_features": [
+        {
+          "feature": "debt_equity",
+          "value": 0.2587,
+          "shap": 0.07415
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0362,
+          "shap": 0.07365
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3244,
+          "shap": -0.05908
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2541,
+          "shap": 0.04046
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03755
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.5191,
+          "shap": -0.0241
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.4932,
+          "shap": 0.02098
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.0171
+        }
+      ]
+    },
+    {
+      "ticker": "K",
+      "predicted_return": 1.6742,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.3695,
+          "shap": 0.35151
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5201,
+          "shap": 0.24456
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0861,
+          "shap": 0.15358
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.527,
+          "shap": 0.14462
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.6378,
+          "shap": 0.13538
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.4578,
+          "shap": 0.13379
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06146
+        },
+        {
+          "feature": "roa",
+          "value": 0.1926,
+          "shap": 0.05551
+        }
+      ]
+    },
+    {
+      "ticker": "KEY",
+      "predicted_return": 0.2766,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2257,
+          "shap": -0.12447
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0398,
+          "shap": 0.07716
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.0156,
+          "shap": 0.06603
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03512
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2814,
+          "shap": -0.02271
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.1303,
+          "shap": 0.01872
+        },
+        {
+          "feature": "roa",
+          "value": 0.0331,
+          "shap": 0.01865
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.4244,
+          "shap": -0.01733
+        }
+      ]
+    },
+    {
+      "ticker": "CCO",
+      "predicted_return": 0.8739,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.5496,
+          "shap": 0.29033
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1104,
+          "shap": 0.20709
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1443,
+          "shap": 0.10981
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2787,
+          "shap": 0.08613
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.08281
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.3487,
+          "shap": -0.06405
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 8.2621,
+          "shap": -0.04485
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -2.2836,
+          "shap": -0.0443
+        }
+      ]
+    },
+    {
+      "ticker": "SOBO",
+      "predicted_return": 0.1857,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.21,
+          "shap": -0.10912
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0632,
+          "shap": 0.08748
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.718,
+          "shap": -0.06643
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.0713,
+          "shap": 0.04769
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03571
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3598,
+          "shap": 0.02635
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 3.9159,
+          "shap": 0.02232
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.5246,
+          "shap": -0.01869
+        }
+      ]
+    },
+    {
+      "ticker": "DPM",
+      "predicted_return": 1.572,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.5659,
+          "shap": 0.36127
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0048,
+          "shap": 0.23344
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5172,
+          "shap": 0.20739
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6375,
+          "shap": -0.15262
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.276,
+          "shap": 0.13187
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 1.5994,
+          "shap": 0.09155
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.4527,
+          "shap": 0.09086
+        },
+        {
+          "feature": "mom_12m",
+          "value": 1.0666,
+          "shap": 0.07823
+        }
+      ]
+    },
+    {
+      "ticker": "SLF",
+      "predicted_return": 0.2771,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1952,
+          "shap": -0.09991
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.115,
+          "shap": 0.0931
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03696
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5711,
+          "shap": 0.03055
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.5405,
+          "shap": 0.02313
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.4554,
+          "shap": -0.01852
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01392
+        },
+        {
+          "feature": "roa",
+          "value": 0.0094,
+          "shap": 0.01229
+        }
+      ]
+    },
+    {
+      "ticker": "ARX",
+      "predicted_return": 0.7296,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1758,
+          "shap": 0.21204
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.2077,
+          "shap": 0.06707
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3546,
+          "shap": 0.05908
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5087,
+          "shap": 0.05139
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03978
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.7068,
+          "shap": 0.03452
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.02966
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1963,
+          "shap": -0.0256
+        }
+      ]
+    },
+    {
+      "ticker": "ATD",
+      "predicted_return": 0.2991,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0501,
+          "shap": 0.11653
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2693,
+          "shap": -0.06685
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03663
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.2493,
+          "shap": 0.03114
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.189,
+          "shap": 0.02401
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.5604,
+          "shap": -0.01921
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.3106,
+          "shap": -0.01667
+        },
+        {
+          "feature": "sector",
+          "value": "Consumer Staples",
+          "shap": 0.01296
+        }
+      ]
+    },
+    {
+      "ticker": "DSG",
+      "predicted_return": 0.5034,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1198,
+          "shap": 0.13189
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0052,
+          "shap": 0.08919
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.7708,
+          "shap": -0.08348
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.5388,
+          "shap": -0.0692
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.411,
+          "shap": 0.05952
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05761
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.03596
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.3899,
+          "shap": 0.03417
+        }
+      ]
+    },
+    {
+      "ticker": "EFN",
+      "predicted_return": 0.221,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2442,
+          "shap": -0.11178
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0522,
+          "shap": 0.06312
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04253
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3747,
+          "shap": 0.02538
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.165,
+          "shap": -0.02288
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.6764,
+          "shap": 0.01987
+        },
+        {
+          "feature": "roa",
+          "value": 0.0201,
+          "shap": 0.01584
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.4433,
+          "shap": -0.01522
+        }
+      ]
+    },
+    {
+      "ticker": "AG",
+      "predicted_return": 1.1558,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.7398,
+          "shap": 0.31068
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 1.2447,
+          "shap": 0.25745
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.12985
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1118,
+          "shap": 0.11194
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3557,
+          "shap": 0.0781
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.7255,
+          "shap": 0.07664
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -1.2329,
+          "shap": -0.04813
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.9487,
+          "shap": 0.04614
+        }
+      ]
+    },
+    {
+      "ticker": "DOL",
+      "predicted_return": 0.2206,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2352,
+          "shap": -0.10883
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1314,
+          "shap": 0.0678
+        },
+        {
+          "feature": "roa",
+          "value": 0.1732,
+          "shap": 0.06015
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 35.7612,
+          "shap": -0.0542
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03999
+        },
+        {
+          "feature": "ev_ebitda",
+          "value": 23.5258,
+          "shap": 0.02805
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4505,
+          "shap": 0.02575
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.4735,
+          "shap": 0.01727
+        }
+      ]
+    },
+    {
+      "ticker": "WPM",
+      "predicted_return": 0.6831,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.8018,
+          "shap": 0.28185
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0009,
+          "shap": 0.16581
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.4704,
+          "shap": 0.16157
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.7222,
+          "shap": -0.14766
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.6833,
+          "shap": 0.10269
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 8.4744,
+          "shap": -0.06212
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.6441,
+          "shap": -0.05138
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04825
+        }
+      ]
+    },
+    {
+      "ticker": "TFII",
+      "predicted_return": 0.5636,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.061,
+          "shap": 0.14472
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3773,
+          "shap": 0.0787
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.1324,
+          "shap": 0.05157
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04336
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.0297
+        },
+        {
+          "feature": "roe",
+          "value": 0.116,
+          "shap": 0.02215
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.6972,
+          "shap": -0.01962
+        },
+        {
+          "feature": "yield_curve_2s10s",
+          "value": 0.74,
+          "shap": 0.01837
+        }
+      ]
+    },
+    {
+      "ticker": "NXE",
+      "predicted_return": 0.9578,
+      "top_features": [
+        {
+          "feature": "roa",
+          "value": -0.1252,
+          "shap": 0.20512
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5643,
+          "shap": 0.19921
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3203,
+          "shap": 0.09875
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.08866
+        },
+        {
+          "feature": "roe",
+          "value": -0.169,
+          "shap": 0.08551
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.5205,
+          "shap": -0.03869
+        },
+        {
+          "feature": "sector",
+          "value": "Energy",
+          "shap": 0.03439
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": null,
+          "shap": -0.03381
+        }
+      ]
+    },
+    {
+      "ticker": "AEM",
+      "predicted_return": 1.6758,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.4371,
+          "shap": 0.36725
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.4478,
+          "shap": 0.19011
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.5314,
+          "shap": 0.17932
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.013,
+          "shap": 0.15839
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5813,
+          "shap": 0.14425
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3853,
+          "shap": 0.13538
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.05757
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.5585,
+          "shap": 0.0531
+        }
+      ]
+    },
+    {
+      "ticker": "ABX",
+      "predicted_return": 1.5513,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.3122,
+          "shap": 0.33672
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.4721,
+          "shap": 0.19931
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.4667,
+          "shap": 0.17984
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1962,
+          "shap": 0.16452
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5885,
+          "shap": 0.10543
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5126,
+          "shap": 0.1025
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.06007
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04852
+        }
+      ]
+    },
+    {
+      "ticker": "WCP",
+      "predicted_return": 0.6518,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.5005,
+          "shap": 0.18627
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3424,
+          "shap": 0.11968
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2855,
+          "shap": -0.0576
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5856,
+          "shap": 0.05513
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03355
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.6582,
+          "shap": 0.03191
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.1079,
+          "shap": 0.0319
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.7951,
+          "shap": 0.0285
+        }
+      ]
+    },
+    {
+      "ticker": "RY",
+      "predicted_return": 0.2549,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1478,
+          "shap": -0.11935
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1573,
+          "shap": 0.09234
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03635
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4967,
+          "shap": 0.02982
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.9541,
+          "shap": 0.02273
+        },
+        {
+          "feature": "roa",
+          "value": 0.0088,
+          "shap": 0.01568
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01466
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.699,
+          "shap": -0.01213
+        }
+      ]
+    },
+    {
+      "ticker": "BTO",
+      "predicted_return": 1.7934,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.6095,
+          "shap": 0.37162
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5603,
+          "shap": 0.2429
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.4588,
+          "shap": 0.20541
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1665,
+          "shap": 0.16671
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5436,
+          "shap": 0.12015
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5001,
+          "shap": 0.10418
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.5632,
+          "shap": 0.09493
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06131
+        }
+      ]
+    },
+    {
+      "ticker": "TECK.B",
+      "predicted_return": 1.219,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1865,
+          "shap": 0.27995
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3828,
+          "shap": 0.20611
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.4645,
+          "shap": 0.16102
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.9488,
+          "shap": 0.13759
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.247,
+          "shap": 0.10037
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.7716,
+          "shap": 0.05435
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04304
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.0346
+        }
+      ]
+    },
+    {
+      "ticker": "BAM",
+      "predicted_return": 0.1146,
+      "top_features": [
+        {
+          "feature": "gross_margin",
+          "value": 0.702,
+          "shap": -0.12488
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.6584,
+          "shap": 0.11142
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1552,
+          "shap": 0.10971
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 14.496,
+          "shap": -0.1039
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.4462,
+          "shap": 0.07831
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2894,
+          "shap": -0.06416
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04939
+        },
+        {
+          "feature": "boc_rate",
+          "value": 2.25,
+          "shap": -0.0464
+        }
+      ]
+    },
+    {
+      "ticker": "FM",
+      "predicted_return": 1.3793,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0906,
+          "shap": 0.32789
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5088,
+          "shap": 0.26855
+        },
+        {
+          "feature": "roa",
+          "value": -0.0011,
+          "shap": 0.11914
+        },
+        {
+          "feature": "roe",
+          "value": -0.0025,
+          "shap": 0.10866
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2784,
+          "shap": 0.09335
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6194,
+          "shap": 0.09139
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06773
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.05488
+        }
+      ]
+    },
+    {
+      "ticker": "RBA",
+      "predicted_return": 0.2301,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0715,
+          "shap": 0.08364
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2779,
+          "shap": -0.0673
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03556
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4637,
+          "shap": 0.02779
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -1.5345,
+          "shap": -0.0217
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2804,
+          "shap": -0.01671
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.7273,
+          "shap": 0.01648
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.0411,
+          "shap": -0.01538
+        }
+      ]
+    },
+    {
+      "ticker": "OTEX",
+      "predicted_return": 0.0844,
+      "top_features": [
+        {
+          "feature": "gross_margin",
+          "value": 0.7225,
+          "shap": -0.12603
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05086
+        },
+        {
+          "feature": "sector",
+          "value": "Information Technology",
+          "shap": 0.04655
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.2009,
+          "shap": -0.03265
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3804,
+          "shap": -0.03006
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.0375,
+          "shap": -0.02504
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.1042,
+          "shap": -0.02279
+        },
+        {
+          "feature": "roe",
+          "value": 0.1109,
+          "shap": 0.01791
+        }
+      ]
+    },
+    {
+      "ticker": "IAG",
+      "predicted_return": 0.3312,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2383,
+          "shap": -0.10036
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0927,
+          "shap": 0.08563
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1988,
+          "shap": 0.0645
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03733
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.592,
+          "shap": 0.03656
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.2864,
+          "shap": 0.0232
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.571,
+          "shap": -0.01875
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2715,
+          "shap": -0.01267
+        }
+      ]
+    },
+    {
+      "ticker": "TRI",
+      "predicted_return": 1.0778,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.4677,
+          "shap": 0.21966
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.03,
+          "shap": 0.20995
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.485,
+          "shap": 0.18547
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.071,
+          "shap": 0.14455
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1991,
+          "shap": 0.0816
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -2.0443,
+          "shap": -0.07774
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05271
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.758,
+          "shap": -0.04217
+        }
+      ]
+    },
+    {
+      "ticker": "BN",
+      "predicted_return": 0.2554,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2789,
+          "shap": -0.08841
+        },
+        {
+          "feature": "roa",
+          "value": 0.0025,
+          "shap": 0.0632
+        },
+        {
+          "feature": "roe",
+          "value": 0.0273,
+          "shap": 0.04792
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04383
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.03872
+        },
+        {
+          "feature": "beta_252d",
+          "value": 1.2778,
+          "shap": -0.03253
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2414,
+          "shap": 0.02708
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.9442,
+          "shap": 0.02148
+        }
+      ]
+    },
+    {
+      "ticker": "SU",
+      "predicted_return": 0.4375,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2549,
+          "shap": -0.11545
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0456,
+          "shap": 0.07677
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3214,
+          "shap": 0.07036
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.0095,
+          "shap": 0.04712
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03619
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5747,
+          "shap": 0.0265
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4138,
+          "shap": 0.02467
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.4014,
+          "shap": 0.02249
+        }
+      ]
+    },
+    {
+      "ticker": "CS",
+      "predicted_return": 1.125,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.4756,
+          "shap": 0.30703
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.6117,
+          "shap": 0.24003
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.393,
+          "shap": 0.14064
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2356,
+          "shap": 0.09469
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6616,
+          "shap": 0.0869
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06875
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.8973,
+          "shap": -0.05625
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.0276,
+          "shap": -0.04326
+        }
+      ]
+    },
+    {
+      "ticker": "FNV",
+      "predicted_return": 0.4563,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.6369,
+          "shap": 0.24682
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.7391,
+          "shap": -0.14099
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.7137,
+          "shap": 0.12129
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.0497,
+          "shap": -0.06145
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04477
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3742,
+          "shap": 0.043
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.6923,
+          "shap": -0.04065
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.02603
+        }
+      ]
+    },
+    {
+      "ticker": "QSR",
+      "predicted_return": 0.1932,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2439,
+          "shap": -0.10945
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1223,
+          "shap": 0.06686
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 9.9027,
+          "shap": -0.04267
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03796
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.2699,
+          "shap": 0.03008
+        },
+        {
+          "feature": "ev_ebitda",
+          "value": 20.1545,
+          "shap": 0.02771
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3385,
+          "shap": 0.02411
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.1455,
+          "shap": -0.01554
+        }
+      ]
+    },
+    {
+      "ticker": "CPX",
+      "predicted_return": 0.3109,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2967,
+          "shap": -0.08934
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": -0.0148,
+          "shap": 0.07686
+        },
+        {
+          "feature": "roe",
+          "value": 0.0329,
+          "shap": 0.05226
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03479
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4352,
+          "shap": 0.02736
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.1617,
+          "shap": 0.02329
+        },
+        {
+          "feature": "roa",
+          "value": 0.0104,
+          "shap": 0.02302
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -1.5345,
+          "shap": -0.01777
+        }
+      ]
+    },
+    {
+      "ticker": "BBD.B",
+      "predicted_return": 0.7823,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1023,
+          "shap": 0.22816
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.4814,
+          "shap": 0.20797
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2001,
+          "shap": 0.09331
+        },
+        {
+          "feature": "beta_252d",
+          "value": 1.7147,
+          "shap": -0.06551
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.2245,
+          "shap": -0.04626
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04576
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 1.5863,
+          "shap": 0.04065
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.03147
+        }
+      ]
+    },
+    {
+      "ticker": "HBM",
+      "predicted_return": 1.9516,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0939,
+          "shap": 0.37917
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.6068,
+          "shap": 0.25497
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.3295,
+          "shap": 0.22519
+        },
+        {
+          "feature": "mom_12m",
+          "value": 1.5458,
+          "shap": 0.17345
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3761,
+          "shap": 0.13424
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3361,
+          "shap": 0.10393
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.7394,
+          "shap": 0.0989
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 2.7248,
+          "shap": 0.08687
+        }
+      ]
+    },
+    {
+      "ticker": "FFH",
+      "predicted_return": 0.3365,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1276,
+          "shap": 0.10789
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2296,
+          "shap": -0.09636
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03823
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.8471,
+          "shap": 0.03176
+        },
+        {
+          "feature": "pe_ratio",
+          "value": 11.2596,
+          "shap": 0.02723
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.966,
+          "shap": 0.02546
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.0146,
+          "shap": -0.01492
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01286
+        }
+      ]
+    },
+    {
+      "ticker": "ALA",
+      "predicted_return": 0.2963,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1791,
+          "shap": -0.11429
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0206,
+          "shap": 0.06808
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.18,
+          "shap": 0.06006
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03476
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.44,
+          "shap": 0.02796
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.94,
+          "shap": 0.02737
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1789,
+          "shap": -0.024
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.2902,
+          "shap": 0.02397
+        }
+      ]
+    },
+    {
+      "ticker": "BNS",
+      "predicted_return": 0.328,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1638,
+          "shap": -0.09832
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1036,
+          "shap": 0.09232
+        },
+        {
+          "feature": "roa",
+          "value": 0.0053,
+          "shap": 0.06303
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03649
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4683,
+          "shap": 0.02993
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.746,
+          "shap": 0.02902
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.6039,
+          "shap": -0.01764
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.01449
+        }
+      ]
+    },
+    {
+      "ticker": "STN",
+      "predicted_return": 0.4317,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0859,
+          "shap": 0.12272
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.6917,
+          "shap": -0.09913
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0747
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2912,
+          "shap": -0.0745
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.3349,
+          "shap": 0.07036
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3707,
+          "shap": 0.03688
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4333,
+          "shap": 0.03596
+        },
+        {
+          "feature": "rel_strength_sector",
+          "value": -0.2132,
+          "shap": 0.0318
+        }
+      ]
+    },
+    {
+      "ticker": "CTC.A",
+      "predicted_return": 0.2684,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2266,
+          "shap": -0.11083
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0515,
+          "shap": 0.08551
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03624
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4831,
+          "shap": 0.03039
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.8563,
+          "shap": 0.02546
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3442,
+          "shap": 0.02365
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2204,
+          "shap": -0.01733
+        },
+        {
+          "feature": "roa",
+          "value": 0.0244,
+          "shap": 0.01657
+        }
+      ]
+    },
+    {
+      "ticker": "ATZ",
+      "predicted_return": 0.5623,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.3521,
+          "shap": 0.17674
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.3965,
+          "shap": 0.09531
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4487,
+          "shap": 0.08012
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 11.8032,
+          "shap": -0.05759
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04266
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.3414,
+          "shap": -0.03981
+        },
+        {
+          "feature": "beta_252d",
+          "value": 1.3371,
+          "shap": -0.0326
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.02529
+        }
+      ]
+    },
+    {
+      "ticker": "WN",
+      "predicted_return": 0.2735,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2047,
+          "shap": -0.11676
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.0172,
+          "shap": 0.08779
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0625,
+          "shap": 0.06766
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03619
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3199,
+          "shap": 0.02356
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.2322,
+          "shap": -0.01769
+        },
+        {
+          "feature": "sector",
+          "value": "Consumer Staples",
+          "shap": 0.01733
+        },
+        {
+          "feature": "mom_12m",
+          "value": 0.2225,
+          "shap": -0.01514
+        }
+      ]
+    },
+    {
+      "ticker": "ENB",
+      "predicted_return": 0.2958,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1619,
+          "shap": -0.12748
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.2192,
+          "shap": 0.10739
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.142,
+          "shap": 0.03702
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03567
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.4184,
+          "shap": 0.0268
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3297,
+          "shap": 0.0251
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.5929,
+          "shap": 0.02252
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1844,
+          "shap": -0.01767
+        }
+      ]
+    },
+    {
+      "ticker": "OR",
+      "predicted_return": 0.8452,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.451,
+          "shap": 0.29033
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0035,
+          "shap": 0.16915
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.4528,
+          "shap": 0.15963
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.8382,
+          "shap": -0.12651
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.7292,
+          "shap": 0.11965
+        },
+        {
+          "feature": "beta_252d",
+          "value": 2.3913,
+          "shap": -0.04932
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04581
+        },
+        {
+          "feature": "value_z_universe",
+          "value": -0.192,
+          "shap": -0.04331
+        }
+      ]
+    },
+    {
+      "ticker": "IMG",
+      "predicted_return": 1.7498,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.747,
+          "shap": 0.34365
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1818,
+          "shap": 0.20539
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.6174,
+          "shap": 0.19162
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5904,
+          "shap": 0.12448
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4228,
+          "shap": 0.10561
+        },
+        {
+          "feature": "mom_12m",
+          "value": 1.0973,
+          "shap": 0.09256
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6435,
+          "shap": 0.08534
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": 1.6714,
+          "shap": 0.08141
+        }
+      ]
+    },
+    {
+      "ticker": "CM",
+      "predicted_return": 0.32,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.1851,
+          "shap": -0.10126
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1366,
+          "shap": 0.09329
+        },
+        {
+          "feature": "roa",
+          "value": 0.0075,
+          "shap": 0.0624
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03636
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5507,
+          "shap": 0.03055
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.3994,
+          "shap": 0.02288
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.7568,
+          "shap": -0.01667
+        },
+        {
+          "feature": "sector",
+          "value": "Financials",
+          "shap": 0.0147
+        }
+      ]
+    },
+    {
+      "ticker": "CSU",
+      "predicted_return": 0.9203,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.4498,
+          "shap": 0.25628
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1547,
+          "shap": 0.17421
+        },
+        {
+          "feature": "momentum_z_universe",
+          "value": -1.7563,
+          "shap": -0.10163
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.3624,
+          "shap": 0.07627
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3758,
+          "shap": 0.07412
+        },
+        {
+          "feature": "sector",
+          "value": "Information Technology",
+          "shap": 0.06752
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.05485
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.4996,
+          "shap": 0.04698
+        }
+      ]
+    },
+    {
+      "ticker": "EQX",
+      "predicted_return": 1.3276,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.9907,
+          "shap": 0.2861
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.6194,
+          "shap": 0.24663
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.281,
+          "shap": 0.15291
+        },
+        {
+          "feature": "roe",
+          "value": 0.0382,
+          "shap": 0.09855
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.3533,
+          "shap": 0.09529
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.07453
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6169,
+          "shap": 0.07449
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.06165
+        }
+      ]
+    },
+    {
+      "ticker": "RCI.B",
+      "predicted_return": 0.3631,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0538,
+          "shap": 0.11642
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.2729,
+          "shap": -0.07627
+        },
+        {
+          "feature": "sector",
+          "value": "Communication",
+          "shap": -0.03583
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.0917,
+          "shap": 0.0354
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03319
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 1.1216,
+          "shap": 0.03177
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.4495,
+          "shap": 0.03021
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4523,
+          "shap": 0.02696
+        }
+      ]
+    },
+    {
+      "ticker": "IFC",
+      "predicted_return": 0.3665,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2127,
+          "shap": -0.10621
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0436,
+          "shap": 0.0782
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.2521,
+          "shap": 0.06488
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.1786,
+          "shap": 0.03928
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03748
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.6948,
+          "shap": 0.03355
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.414,
+          "shap": 0.02305
+        },
+        {
+          "feature": "mom_12m",
+          "value": -0.0074,
+          "shap": -0.01901
+        }
+      ]
+    },
+    {
+      "ticker": "AGI",
+      "predicted_return": 1.735,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.3429,
+          "shap": 0.38547
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.553,
+          "shap": 0.23842
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.4858,
+          "shap": 0.17669
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.0502,
+          "shap": 0.15355
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.5525,
+          "shap": 0.14425
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.5555,
+          "shap": 0.12016
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.6446,
+          "shap": 0.08608
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.0732
+        }
+      ]
+    },
+    {
+      "ticker": "LUG",
+      "predicted_return": 0.7163,
+      "top_features": [
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.4944,
+          "shap": 0.2814
+        },
+        {
+          "feature": "vol_252d",
+          "value": 0.5639,
+          "shap": 0.20225
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6878,
+          "shap": -0.16113
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.3472,
+          "shap": 0.12005
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 14.4421,
+          "shap": -0.09346
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.6183,
+          "shap": 0.08102
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06666
+        },
+        {
+          "feature": "usdcad_chg_3m",
+          "value": 0.0318,
+          "shap": 0.04253
+        }
+      ]
+    },
+    {
+      "ticker": "MRU",
+      "predicted_return": 0.3056,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.196,
+          "shap": -0.12309
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.0371,
+          "shap": 0.07383
+        },
+        {
+          "feature": "beta_252d",
+          "value": 0.0134,
+          "shap": 0.06061
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.04173
+        },
+        {
+          "feature": "value_z_universe",
+          "value": 0.434,
+          "shap": 0.02893
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.1986,
+          "shap": 0.02331
+        },
+        {
+          "feature": "vol_63d",
+          "value": 0.1949,
+          "shap": -0.0207
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 2.8355,
+          "shap": 0.01933
+        }
+      ]
+    },
+    {
+      "ticker": "TOU",
+      "predicted_return": 0.4112,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2538,
+          "shap": -0.14509
+        },
+        {
+          "feature": "beta_252d",
+          "value": -0.115,
+          "shap": 0.07986
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.1225,
+          "shap": 0.07758
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1156,
+          "shap": 0.07673
+        },
+        {
+          "feature": "roe",
+          "value": 0.017,
+          "shap": 0.04579
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.4238,
+          "shap": 0.037
+        },
+        {
+          "feature": "pb_ratio",
+          "value": 1.5263,
+          "shap": 0.0346
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.03005
+        }
+      ]
+    },
+    {
+      "ticker": "X",
+      "predicted_return": 0.3601,
+      "top_features": [
+        {
+          "feature": "vol_252d",
+          "value": 0.2471,
+          "shap": -0.10768
+        },
+        {
+          "feature": "gross_margin",
+          "value": 0.6553,
+          "shap": -0.09382
+        },
+        {
+          "feature": "debt_equity",
+          "value": 0.4558,
+          "shap": 0.07007
+        },
+        {
+          "feature": "operating_margin",
+          "value": 0.449,
+          "shap": 0.06863
+        },
+        {
+          "feature": "revenue_growth_yoy",
+          "value": 0.1761,
+          "shap": 0.06663
+        },
+        {
+          "feature": "oil_chg_3m",
+          "value": -0.1694,
+          "shap": 0.06607
+        },
+        {
+          "feature": "roa",
+          "value": 0.0082,
+          "shap": 0.05765
+        },
+        {
+          "feature": "rel_strength_sector",
+          "value": -0.2069,
+          "shap": 0.03363
+        }
+      ]
+    }
+  ]
+}

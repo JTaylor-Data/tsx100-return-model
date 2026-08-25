@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TSX Top-100 Return Ranking Model</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>TSX Top-100 Return Ranking Model</h1>
+      <p>Predicted 12-month forward total return, ranked across the top 100 TSX stocks by index weight. LightGBM trained on technical, fundamental, macro, and cross-sectional features, validated with purge/embargo walk-forward backtesting.</p>
+    </div>
+    <span class="badge"><span class="dot"></span><span id="as-of-badge">Loading…</span></span>
+  </header>
+
+  <div class="limitation-banner">
+    <b>Known limitation:</b> point forecasts of 12-month equity returns have inherently low R² &mdash; markets are close to efficient at that horizon, and no model here changes that. Evaluation therefore leans on <b>rank quality</b> (Spearman IC, decile spread) rather than point accuracy. Fundamental ratios are only available from each company's most recent ~5 annual filings; earlier history in the backtest relies on technical/macro features alone.
+  </div>
+
+  <main>
+    <section class="cards" id="summary-cards"></section>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab-rankings">Rankings</button>
+      <button class="tab-btn" data-tab="tab-backtest">Predicted vs. Actual</button>
+      <button class="tab-btn" data-tab="tab-insights">Model Insights</button>
+    </div>
+
+    <section id="tab-rankings" class="tab-panel active">
+      <div class="controls">
+        <input id="search-input" type="text" placeholder="Search ticker or name…" />
+        <select id="sector-filter"></select>
+      </div>
+      <div class="table-wrap">
+        <table id="rankings-table">
+          <thead>
+            <tr>
+              <th data-key="rank">Rank</th>
+              <th data-key="ticker">Ticker</th>
+              <th data-key="name">Name</th>
+              <th data-key="sector">Sector</th>
+              <th data-key="predicted_return_12m">Predicted 12mo return</th>
+              <th data-key="current_price">Price</th>
+            </tr>
+          </thead>
+          <tbody id="rankings-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-backtest" class="tab-panel">
+      <div class="chart-card">
+        <h3>Predicted vs. realized return, by rebalance period</h3>
+        <p class="hint">Only periods where the 12-month forward window has already completed. Points above the dashed line beat their prediction; below it, missed.</p>
+        <div class="controls"><select id="period-select"></select></div>
+        <canvas id="pred-vs-actual-chart" height="110"></canvas>
+      </div>
+    </section>
+
+    <section id="tab-insights" class="tab-panel">
+      <div class="chart-card">
+        <h3>Global feature importance</h3>
+        <p class="hint">Mean |SHAP value| across the current 100-stock universe &mdash; what the model leans on most, on average.</p>
+        <canvas id="global-shap-chart" height="260"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Data: yfinance (price, fundamentals), Bank of Canada Valet API (rates, yields), iShares XIC holdings (universe). Model: LightGBM. Not investment advice.
+  </footer>
+
+  <div class="overlay" id="overlay">
+    <div class="drawer">
+      <div class="drawer-head">
+        <div>
+          <h2 id="drawer-ticker"></h2>
+          <div id="drawer-name" style="color:var(--text-dim); font-size:13px;"></div>
+          <span class="sector-pill" id="drawer-sector"></span>
+        </div>
+        <button class="close-btn" id="close-drawer">✕</button>
+      </div>
+      <div class="cards" style="grid-template-columns: 1fr 1fr;">
+        <div class="card">
+          <div class="label">Predicted 12mo return</div>
+          <div class="value" id="drawer-return"></div>
+          <div class="sub" id="drawer-rank"></div>
+        </div>
+        <div class="card">
+          <div class="label">Current price</div>
+          <div class="value" id="drawer-price"></div>
+        </div>
+      </div>
+      <div class="snapshot-grid" id="snapshot-grid"></div>
+      <h3 style="font-size:14px; margin-bottom:4px;">Top SHAP drivers</h3>
+      <p class="hint" style="color:var(--text-dim); font-size:12px; margin-top:0;">What pushed this stock's prediction up or down.</p>
+      <canvas id="shap-waterfall-chart" height="220"></canvas>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
