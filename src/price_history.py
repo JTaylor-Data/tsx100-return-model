@@ -1,16 +1,11 @@
 """Recent price history for the dashboard's per-stock chart, plus a projected
-forward path from each stock's predicted return (Section 8 detail view).
+forward path from each stock's predicted 12mo return (Section 8 detail view).
 
 The "future" leg isn't a second model -- it's a straight-line glide path from
-today's close to close * (1 + predicted_excess_return_12m) at the 12-month
-mark. It uses the *excess* return (vs. that date's universe average), not the
-raw model output: the raw prediction is right-skewed and, when the whole
-current universe shares strong momentum, can be positive for all 100 names at
-once, which makes every chart trend up regardless of relative ranking (see
-predict.py's docstring). The excess-return path is what actually reflects
-whether a stock is expected to beat or lag its peers, which is the signal
-the model is validated on. It's a visualization of the ranking, not a new
-forecast or a claim about the stock's real absolute future price.
+today's close to close * (1 + predicted_return_12m) at the 12-month mark, so
+the dashboard can plot it as a visually distinct continuation of the actual
+price line. It's a visualization of the prediction already in rankings.json,
+not a new forecast.
 
 Output: docs/price_history.json
 """
@@ -52,8 +47,8 @@ def build_history(prices: pd.DataFrame, rankings: dict) -> dict:
         weekly = pd.concat([weekly, pd.Series([ref_close], index=[ref_date])])
 
         last_date, last_close = ref_date, float(ref_close)
-        excess_return = stock["predicted_excess_return_12m"]
-        target_close = last_close * (1 + excess_return) if excess_return is not None else None
+        pred_return = stock["predicted_return_12m"]
+        target_close = last_close * (1 + pred_return) if pred_return is not None else None
 
         projected_dates, projected_close = [], []
         if target_close is not None:

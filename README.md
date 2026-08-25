@@ -7,20 +7,6 @@ financial snapshots, and SHAP explanations per stock.
 
 **Live dashboard:** `docs/index.html` (deploy via GitHub Pages, see below).
 
-## Displayed return: relative, not absolute
-
-The model's raw output (`predicted_return_12m`) is right-skewed by a handful
-of small-cap miners with extreme historical returns, and when the whole
-current universe shares strong momentum it can land positive for all 100
-names at once — technically fine for *ranking* (Spearman rank correlation is
-invariant to a constant shift) but misleading if displayed directly, since
-every stock's chart would trend up regardless of relative attractiveness.
-`predict.py` also computes `predicted_excess_return_12m` = raw prediction
-minus that date's cross-sectional mean, and the dashboard displays that
-everywhere instead — it's what the rank IC / decile spread metrics actually
-validate. The raw value is still shown alongside it in each stock's detail
-view, and `shap_explain.py` explains the raw (untransformed) model output.
-
 ## Known limitation
 
 Point forecasts of 12-month equity returns have inherently low R² in the

@@ -1,17 +1,6 @@
 """Assemble docs/rankings.json: rank all 100 stocks by predicted 12-month
 forward return, using the production LightGBM model trained on all realized
 history (Section 8 dashboard needs a full ranked table + per-stock snapshot).
-
-The model's raw absolute-return output is right-skewed (training target mean
-~+21%, driven by extreme mining-sector outliers) and, when the whole current
-universe shares strong momentum, can come out positive for all 100 names at
-once -- which is fine for ranking (rank correlation is invariant to a constant
-shift) but reads as a meaningless "everything is up" signal if displayed
-directly. So the dashboard's primary number is `predicted_excess_return_12m`
-= raw prediction minus that date's cross-sectional mean prediction -- the
-same relative-attractiveness signal the rank IC / decile spread metrics
-actually validate. The raw value is kept in `predicted_return_12m` for
-reference; SHAP (shap_explain.py) still explains the raw model output.
 """
 import json
 from datetime import datetime, timezone
@@ -47,8 +36,6 @@ def main():
     latest_date = df["date"].max()
     latest = df[df["date"] == latest_date].copy()
     latest["predicted_return_12m"] = predict_lightgbm(model, latest, feature_cols)
-    universe_mean_return = float(latest["predicted_return_12m"].mean())
-    latest["predicted_excess_return_12m"] = latest["predicted_return_12m"] - universe_mean_return
     latest = latest.sort_values("predicted_return_12m", ascending=False).reset_index(drop=True)
     latest["rank"] = latest.index + 1
 
@@ -61,7 +48,6 @@ def main():
             "yf_ticker": row["yf_ticker"],
             "name": u["name"] if u is not None else None,
             "sector": row["sector"],
-            "predicted_excess_return_12m": _safe(row["predicted_excess_return_12m"]),
             "predicted_return_12m": _safe(row["predicted_return_12m"]),
             "current_price": _safe(row["close"]),
             "snapshot": {f: _safe(row[f]) for f in SNAPSHOT_FIELDS},
@@ -74,22 +60,18 @@ def main():
         "model": "lightgbm",
         "n_features": len(feature_cols),
         "n_training_rows": int(len(realized)),
-        "universe_mean_predicted_return_12m": round(universe_mean_return, 4),
         "stocks": stocks,
     }
     out_path = DOCS / "rankings.json"
     with open(out_path, "w") as f:
         json.dump(out, f, indent=2)
     print(f"Wrote {out_path} ({len(stocks)} stocks, as of {out['as_of_date']})")
-    print(f"Universe mean raw predicted return: {universe_mean_return:+.1%}")
-    print("\nTop 5 predicted (excess vs. universe avg):")
+    print("\nTop 5 predicted:")
     for s in stocks[:5]:
-        print(f"  {s['rank']:>3} {s['ticker']:<8} {s['predicted_excess_return_12m']:+.1%}  "
-              f"(raw {s['predicted_return_12m']:+.1%})  {s['sector']}")
-    print("Bottom 5 predicted (excess vs. universe avg):")
+        print(f"  {s['rank']:>3} {s['ticker']:<8} {s['predicted_return_12m']:+.1%}  {s['sector']}")
+    print("Bottom 5 predicted:")
     for s in stocks[-5:]:
-        print(f"  {s['rank']:>3} {s['ticker']:<8} {s['predicted_excess_return_12m']:+.1%}  "
-              f"(raw {s['predicted_return_12m']:+.1%})  {s['sector']}")
+        print(f"  {s['rank']:>3} {s['ticker']:<8} {s['predicted_return_12m']:+.1%}  {s['sector']}")
 
 
 if __name__ == "__main__":
