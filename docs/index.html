@@ -94,6 +94,10 @@
           <div class="value" id="drawer-price"></div>
         </div>
       </div>
+      <h3 style="font-size:14px; margin-bottom:4px;">Price history &amp; predicted path</h3>
+      <p class="hint" style="color:var(--text-dim); font-size:12px; margin-top:0;">Solid: last 24 months actual (weekly close). Dashed: straight-line glide path to the model's 12-month predicted return &mdash; a visualization of the prediction, not a separate forecast.</p>
+      <canvas id="price-chart" height="200"></canvas>
+
       <div class="snapshot-grid" id="snapshot-grid"></div>
       <h3 style="font-size:14px; margin-bottom:4px;">Top SHAP drivers</h3>
       <p class="hint" style="color:var(--text-dim); font-size:12px; margin-top:0;">What pushed this stock's prediction up or down.</p>

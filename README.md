@@ -51,6 +51,7 @@ src/
   backtest.py       walk-forward validation -> docs/backtest_history.json
   shap_explain.py   SHAP values -> docs/shap_values.json
   predict.py        current rankings -> docs/rankings.json
+  price_history.py  recent price + predicted glide path -> docs/price_history.json
 docs/               GitHub Pages source (static HTML/CSS/JS + Chart.js)
 .github/workflows/refresh.yml   monthly scheduled pipeline run
 ```
@@ -72,6 +73,7 @@ python labels.py             # -> data/processed/labeled_panel.parquet
 python backtest.py           # -> docs/backtest_history.json
 python shap_explain.py       # -> docs/shap_values.json
 python predict.py            # -> docs/rankings.json
+python price_history.py      # -> docs/price_history.json (needs rankings.json)
 ```
 
 ## Viewing the dashboard locally

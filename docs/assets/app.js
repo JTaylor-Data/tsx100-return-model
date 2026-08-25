@@ -36,17 +36,19 @@ function retClass(v) {
   return v >= 0 ? "ret-pos" : "ret-neg";
 }
 
-const state = { rankings: null, shap: null, backtest: null, sortKey: "rank", sortDir: 1, filterSector: "", search: "" };
+const state = { rankings: null, shap: null, backtest: null, priceHistory: null, sortKey: "rank", sortDir: 1, filterSector: "", search: "" };
 
 async function loadData() {
-  const [rankings, shap, backtest] = await Promise.all([
+  const [rankings, shap, backtest, priceHistory] = await Promise.all([
     fetch("rankings.json").then(r => r.json()),
     fetch("shap_values.json").then(r => r.json()),
     fetch("backtest_history.json").then(r => r.json()),
+    fetch("price_history.json").then(r => r.json()),
   ]);
   state.rankings = rankings;
   state.shap = shap;
   state.backtest = backtest;
+  state.priceHistory = priceHistory;
 }
 
 function renderHeader() {
@@ -141,7 +143,66 @@ function openDrawer(ticker) {
     </div>`).join("");
 
   renderShapChart(shapEntry);
+  renderPriceChart(stock.ticker);
   document.getElementById("overlay").classList.add("open");
+}
+
+let priceChart = null;
+function renderPriceChart(ticker) {
+  const ctx = document.getElementById("price-chart");
+  if (priceChart) priceChart.destroy();
+  const entry = state.priceHistory.stocks[ticker];
+  if (!entry) return;
+
+  const labels = [...entry.history_dates, ...entry.projected_dates];
+  const historyData = [...entry.history_close, ...entry.projected_dates.map(() => null)];
+  // repeat the last actual close as the first projected point so the dashed
+  // line visually continues from where the solid line ends
+  const projectedData = [
+    ...entry.history_dates.slice(0, -1).map(() => null),
+    entry.history_close[entry.history_close.length - 1],
+    ...entry.projected_close,
+  ];
+
+  priceChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels,
+      datasets: [
+        {
+          label: "Actual price",
+          data: historyData,
+          borderColor: "#4f8cff",
+          backgroundColor: "transparent",
+          borderWidth: 2,
+          pointRadius: 0,
+          spanGaps: false,
+        },
+        {
+          label: "Predicted path (12mo)",
+          data: projectedData,
+          borderColor: "#e8a33d",
+          backgroundColor: "transparent",
+          borderWidth: 2,
+          borderDash: [6, 4],
+          pointRadius: 0,
+          spanGaps: false,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { labels: { color: "#8b92a8" } },
+        tooltip: { callbacks: { label: c => `${c.dataset.label}: $${c.raw?.toFixed(2) ?? "—"}` } },
+      },
+      scales: {
+        x: { ticks: { color: "#8b92a8", maxTicksLimit: 10 }, grid: { color: "#262c3d" } },
+        y: { ticks: { color: "#8b92a8", callback: v => "$" + v }, grid: { color: "#262c3d" } },
+      },
+    },
+  });
 }
 
 function closeDrawer() { document.getElementById("overlay").classList.remove("open"); }
