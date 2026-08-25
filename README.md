@@ -1,6 +1,6 @@
 # TSX Top-100 Return Ranking Model
 
-*This is a toy, proof of conecpt model. Not a serious portfolio project*
+**This is a toy, proof of conecpt model. Not a serious portfolio project**
 
 Predicts 12-month forward total return for the top 100 TSX stocks (by S&P/TSX
 Capped Composite weight), ranks all 100 from highest to lowest expected
